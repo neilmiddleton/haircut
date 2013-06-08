@@ -1,0 +1,6 @@
+%h3
+  Your short URL is
+
+
+  %a{:href => "http://#{request.env["HTTP_HOST"]}/#{@url.short_url}"}
+    http://#{request.env["HTTP_HOST"]}/#{@url.short_url}
